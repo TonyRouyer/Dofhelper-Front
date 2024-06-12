@@ -105,6 +105,12 @@ export default function Page() {
     console.log(newNbSold + ' / ' + newCraft + '/ ' + id);
   }
 
+  const imageStyle = {
+    height: '120px',
+    width: '120px',
+    margin: 'auto 10px auto 0',
+  }
+
   return (
     <div>
       <h1>Gears Page</h1>
@@ -129,7 +135,7 @@ export default function Page() {
             alt="image dofus"
             width="64"
             height="64"
-            className="mr-10"
+            style={imageStyle}
           />
           <div>
             <p

@@ -1,4 +1,4 @@
-// File: /Users/nasta/Documents/Dofhelper/frontend/app/gears/page.js
+// File: C:\Users\T\Desktop\dof\Dofhelper-Front\app\gears\page.js
 import * as entry from '../../../../app/gears/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

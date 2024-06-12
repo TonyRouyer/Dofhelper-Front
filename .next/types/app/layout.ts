@@ -1,4 +1,4 @@
-// File: /Users/nasta/Documents/Dofhelper/frontend/app/layout.js
+// File: C:\Users\T\Desktop\dof\Dofhelper-Front\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
