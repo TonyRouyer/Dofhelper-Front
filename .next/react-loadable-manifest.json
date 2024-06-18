@@ -1,4 +1,40 @@
 {
+  "app\\consumables\\page.js -> ../filters/FiltreNom": {
+    "id": "app\\consumables\\page.js -> ../filters/FiltreNom",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_FiltreNom_js.js"
+    ]
+  },
+  "app\\consumables\\page.js -> ../filters/category": {
+    "id": "app\\consumables\\page.js -> ../filters/category",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_category_js.js"
+    ]
+  },
+  "app\\consumables\\page.js -> ../filters/limit": {
+    "id": "app\\consumables\\page.js -> ../filters/limit",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_limit_js.js"
+    ]
+  },
+  "app\\consumables\\page.js -> ../filters/lvlMax": {
+    "id": "app\\consumables\\page.js -> ../filters/lvlMax",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_lvlMax_js.js"
+    ]
+  },
+  "app\\consumables\\page.js -> ../filters/lvlMin": {
+    "id": "app\\consumables\\page.js -> ../filters/lvlMin",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_lvlMin_js.js"
+    ]
+  },
+  "app\\consumables\\page.js -> ../filters/prixMin": {
+    "id": "app\\consumables\\page.js -> ../filters/prixMin",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_prixMin_js.js"
+    ]
+  },
   "app\\gears\\page.js -> ../filters/FiltreNom": {
     "id": "app\\gears\\page.js -> ../filters/FiltreNom",
     "files": [
@@ -41,16 +77,34 @@
       "static/chunks/_app-pages-browser_app_filters_prixMin_js.js"
     ]
   },
-  "app\\gears\\page.js -> ../filters/ratio": {
-    "id": "app\\gears\\page.js -> ../filters/ratio",
+  "app\\resources\\page.js -> ../filters/FiltreNom": {
+    "id": "app\\resources\\page.js -> ../filters/FiltreNom",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_FiltreNom_js.js"
+    ]
+  },
+  "app\\resources\\page.js -> ../filters/category": {
+    "id": "app\\resources\\page.js -> ../filters/category",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_category_js.js"
+    ]
+  },
+  "app\\resources\\page.js -> ../filters/limit": {
+    "id": "app\\resources\\page.js -> ../filters/limit",
+    "files": [
+      "static/chunks/_app-pages-browser_app_filters_limit_js.js"
+    ]
+  },
+  "app\\resources\\page.js -> ../filters/ratio": {
+    "id": "app\\resources\\page.js -> ../filters/ratio",
     "files": [
       "static/chunks/_app-pages-browser_app_filters_ratio_js.js"
     ]
   },
-  "app\\gears\\page.js -> ../filters/sell": {
-    "id": "app\\gears\\page.js -> ../filters/sell",
+  "app\\resources\\page.js -> ../filters/recipe": {
+    "id": "app\\resources\\page.js -> ../filters/recipe",
     "files": [
-      "static/chunks/_app-pages-browser_app_filters_sell_js.js"
+      "static/chunks/_app-pages-browser_app_filters_recipe_js.js"
     ]
   }
 }

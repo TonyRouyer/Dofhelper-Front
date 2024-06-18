@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.divSyncro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSyncro {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 30px;
+
+}

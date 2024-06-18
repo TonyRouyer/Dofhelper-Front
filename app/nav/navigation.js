@@ -15,6 +15,9 @@ export default function Nav() {
                     <Link href="/gears">Equipements</Link>
                 </li>
                 <li className="mx-10">
+                    <Link href="/consumables">Consomables</Link>
+                </li>
+                <li className="mx-10">
                     <Link href="/shopping">Shopping</Link>
                 </li>
 

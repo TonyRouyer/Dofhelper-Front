@@ -26,7 +26,9 @@ export default function Home() {
     <>
       <p>home Page</p>
 
-      <button type="button" onClick={syncroData}>Syncro!</button>
+      <div className='divSyncro'>
+        <button type="button" className="btnSyncro" onClick={syncroData}>Syncro!</button>
+      </div>
     </>
   );
 }
