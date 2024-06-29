@@ -312,46 +312,55 @@ export default function Page() {
 
                     </div>
                     {hoveredItem && hoveredItem.id_item === item.id_item && (
-                        <div className="absolute bg-white p-5 border" style={{ zIndex: 10 }}>
-                            <h3>Historique des Prix</h3>
-                            <Line
-                                data={{
-                                    labels: hoveredItem.history.map(h => new Date(h.date).toLocaleDateString()),
-                                    datasets: [
-                                        {
-                                            label: 'Prix Unitaire (k)',
-                                            data: hoveredItem.history.map(h => h.price1),
-                                            borderColor: 'rgba(75, 192, 192, 1)',
-                                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        <div className="fixed inset-0 flex items-center justify-center z-50">
+                            <div className="fixed inset-0 bg-black opacity-50" onClick={handleCloseOverlay}></div>
+                            <div className="relative bg-white p-5 border rounded shadow-lg">
+                                <button
+                                    className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded"
+                                    onClick={handleCloseOverlay}
+                                >
+                                    Fermer
+                                </button>
+                                <h3>Historique des Prix</h3>
+                                <Line
+                                    data={{
+                                        labels: hoveredItem.history.map(h => new Date(h.date).toLocaleDateString()),
+                                        datasets: [
+                                            {
+                                                label: 'Prix Unitaire (k)',
+                                                data: hoveredItem.history.map(h => h.price1),
+                                                borderColor: 'rgba(75, 192, 192, 1)',
+                                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                            },
+                                            {
+                                                label: 'Prix 10x (k)',
+                                                data: hoveredItem.history.map(h => h.price10),
+                                                borderColor: 'rgba(153, 102, 255, 1)',
+                                                backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                                            },
+                                            {
+                                                label: 'Prix 100x (k)',
+                                                data: hoveredItem.history.map(h => h.price100),
+                                                borderColor: 'rgba(255, 159, 64, 1)',
+                                                backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                                            }
+                                        ]
+                                    }}
+                                    options={{
+                                        scales: {
+                                            y: {
+                                                beginAtZero: true
+                                            }
                                         },
-                                        {
-                                            label: 'Prix 10x (k)',
-                                            data: hoveredItem.history.map(h => h.price10),
-                                            borderColor: 'rgba(153, 102, 255, 1)',
-                                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                                        },
-                                        {
-                                            label: 'Prix 100x (k)',
-                                            data: hoveredItem.history.map(h => h.price100),
-                                            borderColor: 'rgba(255, 159, 64, 1)',
-                                            backgroundColor: 'rgba(255, 159, 64, 0.2)',
+                                        plugins: {
+                                            legend: {
+                                                display: true,
+                                                position: 'top'
+                                            }
                                         }
-                                    ]
-                                }}
-                                options={{
-                                    scales: {
-                                        y: {
-                                            beginAtZero: true
-                                        }
-                                    },
-                                    plugins: {
-                                        legend: {
-                                            display: true,
-                                            position: 'top'
-                                        }
-                                    }
-                                }}
-                            />
+                                    }}
+                                />
+                            </div>
                         </div>
                     )}
 
